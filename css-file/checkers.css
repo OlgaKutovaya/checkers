@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #F3F4B8, #F5F6A5, #F1F2A8, #F6F7CC);
+}
+
+.container {
+    max-width: 60%;
+    min-height: 800px;
+    margin: 3% auto;
+    box-shadow: 7px 7px 5px 0 #5B5B57;
+}
+
+.container__squares {
+    width: 10%;
+    height: 80px;
+    float: left;
+}
+
+                                                /* SQUARES - COLORS */
+.container__dark-square {
+    background: #A0522D;
+}
+
+.container__light-square {
+    background: #F5DEB3;
+}
+
+                                                /* CHECKERS - POSITION */
+.container__light-checkers,
+.container__dark-checkers {
+    margin: 6% 18%;
+    width: 65%;
+    height: 65px;
+}
+
+                                            /* CHECKERS - INTERACTIVITY */
+
+.container__light-checkers:hover {
+    transform: translateY(-80px);
+    transition: all 1.5s ease-in-out;
+}
+
+.container__dark-checkers:hover {
+    transform: translateY(80px);
+    transition: all 1.5s ease-in-out;
+}
+
+
+                                            /* FRAME */
+.container__frame {
+    background: #4D310C;
+}
+
+.container__frame-symbols {
+    font-size: 25px;
+    font-weight: bold;
+    color: navajowhite;
+    text-align: center;
+}
+
+                                            /* INSIDE FRAME - DECORATIVE LINES */
+
+.container__top-inside-line {
+    border-bottom: 12px double #D2691E;
+    border-top: 7px solid #D2691E;
+}
+
+.container__bottom-inside-line {
+    border-top: 12px double #D2691E;
+    border-bottom: 7px solid #D2691E;
+}
+
+.container__left-inside-line {
+    border-left: 4px solid #D2691E;
+}
+
+.container__right-inside-line {
+    border-right: 4px solid #D2691E;
+}
+
+                                            /* OUT FRAME - DECORATIVE LINES */
+
+.container__left-out-line {
+    border-left: 7px solid #D2691E;
+}
+
+.container__right-out-line {
+    border-right: 7px solid #D2691E;
+}
+
+.container__left-top-out-line {
+    border-top: 7px solid #D2691E;
+    border-left: 7px solid #D2691E;
+}
+
+.container__left-bottom-out-line {
+    border-left: 7px solid #D2691E;
+    border-bottom: 7px solid #D2691E;
+}
+
+.container__right-top-out-line {
+    border-top: 7px solid #D2691E;
+    border-right: 7px solid #D2691E;
+}
+
+.container__right-bottom-out-line {
+    border-right: 7px solid #D2691E;
+    border-bottom: 7px solid #D2691E;
+}
